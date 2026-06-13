@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Académico UPN - Asistencia Inteligente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-upn">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <i class="bi bi-robot me-2 fs-4"></i>
+                <span class="fw-bold">Chatbot Académico UPN</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/"><i class="bi bi-house-door me-1"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/chat"><i class="bi bi-chat-dots me-1"></i>Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/api/v1/docs"><i class="bi bi-code-slash me-1"></i>API</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <span class="badge bg-accent mb-3 px-3 py-2 fs-6">
+                            <i class="bi bi-cpu me-1"></i> NLP + Machine Learning
+                        </span>
+                        <h1 class="hero-title">Sistema Inteligente de Asistencia Académica</h1>
+                        <p class="hero-subtitle">
+                            Chatbot conversacional basado en procesamiento de lenguaje natural y 
+                            Machine Learning para brindar soporte académico 24/7 a estudiantes universitarios.
+                        </p>
+                        <div class="hero-features mt-4">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="feature-card">
+                                        <i class="bi bi-chat-square-text fs-4 text-accent"></i>
+                                        <h6>Respuestas en Tiempo Real</h6>
+                                        <p>Asistencia inmediata 24/7 con alta disponibilidad</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="feature-card">
+                                        <i class="bi bi-gear fs-4 text-accent"></i>
+                                        <h6>Machine Learning</h6>
+                                        <p>Clasificación de intenciones con modelo entrenado</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="feature-card">
+                                        <i class="bi bi-cpu fs-4 text-accent"></i>
+                                        <h6>Simulación Hardware</h6>
+                                        <p>Monitoreo de sensores y módulos virtuales</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="feature-card">
+                                        <i class="bi bi-code-slash fs-4 text-accent"></i>
+                                        <h6>API REST</h6>
+                                        <p>Endpoints para integración con otros sistemas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="/chat" class="btn btn-accent btn-lg me-3">
+                                <i class="bi bi-chat-dots me-2"></i>Ir al Chat
+                            </a>
+                            <a href="/dashboard" class="btn btn-outline-light btn-lg">
+                                <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="hero-visual">
+                        <div class="chat-preview">
+                            <div class="chat-preview-header">
+                                <i class="bi bi-robot me-2"></i>Asistente Académico
+                            </div>
+                            <div class="chat-preview-body">
+                                <div class="preview-msg bot-msg">
+                                    <div class="msg-bubble">¡Hola! Soy tu asistente académico. ¿En qué puedo ayudarte?</div>
+                                </div>
+                                <div class="preview-msg user-msg">
+                                    <div class="msg-bubble">¿Qué es la herencia en programación?</div>
+                                </div>
+                                <div class="preview-msg bot-msg">
+                                    <div class="msg-bubble">El concepto de herencia significa reutilizar atributos y métodos de una clase padre en una clase hija. Piensa en ello como un hijo que hereda características de sus padres...</div>
+                                </div>
+                                <div class="preview-msg user-msg">
+                                    <div class="msg-bubble">¿Dónde encuentro material de estudio?</div>
+                                </div>
+                                <div class="preview-msg bot-msg">
+                                    <div class="msg-bubble">Te recomiendo estos recursos: 1) Campus virtual, 2) Coursera, 3) Documentación oficial...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section class="architecture-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-2 fw-bold">Arquitectura del Sistema</h2>
+            <p class="text-center text-muted mb-5">Componentes del chatbot inteligente con simulación de hardware</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="arch-card">
+                        <div class="arch-icon"><i class="bi bi-display"></i></div>
+                        <h5>Capa de Presentación</h5>
+                        <ul class="text-start">
+                            <li>Interfaz Web responsive</li>
+                            <li>Chat en tiempo real</li>
+                            <li>Dashboard de monitoreo</li>
+                            <li>API REST documentada</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="arch-card highlight">
+                        <div class="arch-icon"><i class="bi bi-gear"></i></div>
+                        <h5>Capa de Lógica</h5>
+                        <ul class="text-start">
+                            <li>Clasificador NLP (TF-IDF)</li>
+                            <li>Motor de intenciones</li>
+                            <li>Generador de respuestas</li>
+                            <li>Sistema de feedback</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="arch-card">
+                        <div class="arch-icon"><i class="bi bi-cpu"></i></div>
+                        <h5>Capa de Hardware (Simulado)</h5>
+                        <ul class="text-start">
+                            <li>Sensor de entrada de texto</li>
+                            <li>Procesador NLP (GPU/TPU)</li>
+                            <li>Módulo de memoria</li>
+                            <li>Red y alimentación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intents Section -->
+    <section class="intents-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-2 fw-bold">Intenciones del Chatbot</h2>
+            <p class="text-center text-muted mb-5">El modelo ML clasifica las consultas en estas categorías</p>
+            <div class="row g-3 justify-content-center">
+                <div class="col-auto"><span class="badge intent-badge bg-consulta"><i class="bi bi-book me-1"></i>Consulta de Curso</span></div>
+                <div class="col-auto"><span class="badge intent-badge bg-duda"><i class="bi bi-question-circle me-1"></i>Duda Conceptual</span></div>
+                <div class="col-auto"><span class="badge intent-badge bg-ayuda"><i class="bi bi-pencil me-1"></i>Ayuda Tarea</span></div>
+                <div class="col-auto"><span class="badge intent-badge bg-horario"><i class="bi bi-clock me-1"></i>Horario Consulta</span></div>
+                <div class="col-auto"><span class="badge intent-badge bg-recurso"><i class="bi bi-journal me-1"></i>Recurso Educativo</span></div>
+                <div class="col-auto"><span class="badge intent-badge bg-estado"><i class="bi bi-graph-up me-1"></i>Estado Académico</span></div>
+                <div class="col-auto"><span class="badge intent-badge bg-saludo"><i class="bi bi-hand-thumbs-up me-1"></i>Saludo</span></div>
+                <div class="col-auto"><span class="badge intent-badge bg-despedida"><i class="bi bi-emoji-smile me-1"></i>Despedida</span></div>
+                <div class="col-auto"><span class="badge intent-badge bg-soporte"><i class="bi bi-tools me-1"></i>Soporte Técnico</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-upn text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="fw-bold"><i class="bi bi-robot me-2"></i>Chatbot Académico UPN</h6>
+                    <p class="small mb-0">Sistema inteligente de chatbot conversacional basado en NLP y Machine Learning</p>
+                    <p class="small text-white-50">Luis Angel Hostos Hostos - Universidad Privada del Norte</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Navegación</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="/" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li><a href="/chat" class="text-white-50 text-decoration-none">Chat</a></li>
+                        <li><a href="/dashboard" class="text-white-50 text-decoration-none">Dashboard</a></li>
+                        <li><a href="/api/v1/docs" class="text-white-50 text-decoration-none">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Tecnologías</h6>
+                    <ul class="list-unstyled small">
+                        <li class="text-white-50">Python + Flask</li>
+                        <li class="text-white-50">NLP + TF-IDF</li>
+                        <li class="text-white-50">Machine Learning</li>
+                        <li class="text-white-50">API REST</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
